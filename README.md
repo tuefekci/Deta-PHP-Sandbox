@@ -1,10 +1,9 @@
 # Deta-PHP-Sandbox
+Online Sandbox / Playground / Console to quickly test your PHP code.
+
 ---
-title: "PHP Sandbox"
-tagline: "Online Sandbox / Playground / Console to quickly test your PHP code."
-theme_color: "#f26daa"
-git: "https://github.com/tuefekci/Deta-PHP-Sandbox"
-homepage: "https://deta.space/discovery/@tuefekci/phpsandbox/exp-1kEx"
+https://deta.space/discovery/@tuefekci/phpsandbox/exp-1kEx
+
 ---
 
 Introducing the ultimate solution for PHP developers! Our plugin offers an online sandbox, playground, and console all in one place, allowing you to quickly test your PHP code without the need for a local development environment.
