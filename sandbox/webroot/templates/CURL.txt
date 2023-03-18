@@ -1,0 +1,14 @@
+$url = 'https://dummyjson.com/quotes';
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl, CURLOPT_HEADER, false);
+curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+$result = json_decode(curl_exec($curl));
+curl_close($curl);
+
+echo "<pre>";
+print_r($result);
+echo "</pre>";

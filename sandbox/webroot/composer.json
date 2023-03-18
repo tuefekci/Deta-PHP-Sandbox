@@ -1,0 +1,5 @@
+{
+    "require": {
+        "vitorhugoro1/deta-base-php": "^0.3.0"
+    }
+}

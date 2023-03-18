@@ -1,0 +1,3 @@
+$string = "The quick brown fox jumps over the lazy dog.";
+$word_count = str_word_count($string);
+echo "Word count: " . $word_count; // Outputs "Word count: 9"

@@ -1,0 +1,26 @@
+// Create a new image with a white background
+$image = imagecreatetruecolor(500, 500);
+$white = imagecolorallocate($image, 255, 255, 255);
+$black = imagecolorallocate($image, 0, 0, 0);
+imagefill($image, 0, 0, $black);
+
+// Create a yellow color for the circle
+$yellow = imagecolorallocate($image, 255, 255, 0);
+
+// Draw a yellow circle in the center of the image
+$center_x = 250;
+$center_y = 250;
+$radius = 200;
+imagefilledellipse($image, $center_x, $center_y, $radius, $radius, $yellow);
+
+// Output the image as a PNG file
+
+ob_start();
+imagepng($image);
+// Capture the output and clear the output buffer
+$imagedata = ob_get_clean();
+
+// Free up memory
+imagedestroy($image);
+
+print '<p><img src="data:image/png;base64,'.base64_encode($imagedata).'"/></p>';

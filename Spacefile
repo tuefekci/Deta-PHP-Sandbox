@@ -1,0 +1,10 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+icon: ./icon.png
+app_name: "PHP Sandbox"
+micros:
+  - name: phpsandbox
+    primary: true
+    src: ./sandbox/
+    engine: custom
+    run: ./server.sh

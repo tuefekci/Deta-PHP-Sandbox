@@ -1,0 +1,6 @@
+$url = 'https://dummyjson.com/products';
+$result = json_decode(file_get_contents($url));
+
+echo "<pre>";
+print_r($result);
+echo "</pre>";
